@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# Descargas de prueba
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.m4a
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+cookies.txt

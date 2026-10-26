@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vd0"
+version = "1.0.0"
+description = "Descargador de videos desde la terminal (YouTube, Facebook, Instagram, TikTok y más)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["video", "downloader", "youtube", "tiktok", "instagram", "facebook", "cli", "yt-dlp"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = [
+    "yt-dlp",
+    "imageio-ffmpeg",
+]
+
+[project.urls]
+Homepage = "https://github.com/TU_USUARIO/vd0"
+Issues = "https://github.com/TU_USUARIO/vd0/issues"
+
+[project.scripts]
+vd0 = "vd0.cli:main"
+
+[tool.setuptools]
+packages = ["vd0"]
