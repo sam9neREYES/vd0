@@ -22,7 +22,7 @@ Requiere **Python 3.8 o superior**.
 ### Linux y macOS
 
 ```bash
-git clone https://github.com/TU_USUARIO/vd0.git
+git clone https://github.com/sam9neREYES/vd0.git
 cd vd0
 ./install.sh            # usuario normal  -> ~/.local/bin/vd0
 sudo ./install.sh       # administrador   -> /usr/local/bin/vd0 (todos los usuarios)
@@ -31,13 +31,13 @@ sudo ./install.sh       # administrador   -> /usr/local/bin/vd0 (todos los usuar
 Sin clonar:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/TU_USUARIO/vd0/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/sam9neREYES/vd0/main/install.sh | bash
 ```
 
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/TU_USUARIO/vd0.git
+git clone https://github.com/sam9neREYES/vd0.git
 cd vd0
 Set-ExecutionPolicy -Scope Process Bypass
 .\install.ps1           # usuario normal; con PowerShell como administrador instala para todos
@@ -46,15 +46,15 @@ Set-ExecutionPolicy -Scope Process Bypass
 Sin clonar:
 
 ```powershell
-irm https://raw.githubusercontent.com/TU_USUARIO/vd0/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/sam9neREYES/vd0/main/install.ps1 | iex
 ```
 
 ### Con pip / pipx
 
 ```bash
-pipx install git+https://github.com/TU_USUARIO/vd0.git
+pipx install git+https://github.com/sam9neREYES/vd0.git
 # o
-pip install git+https://github.com/TU_USUARIO/vd0.git
+pip install git+https://github.com/sam9neREYES/vd0.git
 ```
 
 ## Uso
@@ -93,16 +93,16 @@ vd0 -h                               # todas las opciones
 
 ## Subir el proyecto a GitHub
 
-1. Reemplaza `TU_USUARIO` por tu usuario de GitHub en `README.md`, `install.sh`, `install.ps1` y `pyproject.toml`:
+1. Reemplaza `sam9neREYES` por tu usuario de GitHub en `README.md`, `install.sh`, `install.ps1` y `pyproject.toml`:
 
    ```bash
    # Linux / macOS
-   grep -rl TU_USUARIO . --exclude-dir=.git | xargs sed -i.bak 's/TU_USUARIO/tu-usuario-real/g' && find . -name '*.bak' -delete
+   grep -rl sam9neREYES . --exclude-dir=.git | xargs sed -i.bak 's/sam9neREYES/tu-usuario-real/g' && find . -name '*.bak' -delete
    ```
    ```powershell
    # Windows PowerShell
    Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch '\\\.git\\' } | ForEach-Object {
-     (Get-Content $_.FullName -Raw) -replace 'TU_USUARIO','tu-usuario-real' | Set-Content $_.FullName -NoNewline
+     (Get-Content $_.FullName -Raw) -replace 'sam9neREYES','tu-usuario-real' | Set-Content $_.FullName -NoNewline
    }
    ```
 

@@ -25,8 +25,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/TU_USUARIO/vd0"
-Issues = "https://github.com/TU_USUARIO/vd0/issues"
+Homepage = "https://github.com/sam9neREYES/vd0"
+Issues = "https://github.com/sam9neREYES/vd0/issues"
 
 [project.scripts]
 vd0 = "vd0.cli:main"

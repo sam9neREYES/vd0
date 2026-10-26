@@ -4,10 +4,10 @@
 #   Administrador:   sudo ./install.sh   -> /opt/vd0            + /usr/local/bin/vd0 (todos los usuarios)
 #
 # Desde GitHub (sin clonar):
-#   curl -fsSL https://raw.githubusercontent.com/TU_USUARIO/vd0/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/sam9neREYES/vd0/main/install.sh | bash
 set -euo pipefail
 
-REPO_URL="https://github.com/TU_USUARIO/vd0.git"
+REPO_URL="https://github.com/sam9neREYES/vd0.git"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" 2>/dev/null && pwd || echo "")"
 
 if [ -n "$SCRIPT_DIR" ] && [ -f "$SCRIPT_DIR/pyproject.toml" ]; then

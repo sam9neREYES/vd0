@@ -3,10 +3,10 @@
 #   Administrador:   PowerShell como admin         -> %ProgramFiles%\vd0 (PATH del sistema)
 #
 # Desde GitHub (sin clonar):
-#   irm https://raw.githubusercontent.com/TU_USUARIO/vd0/main/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/sam9neREYES/vd0/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
-$RepoUrl = "https://github.com/TU_USUARIO/vd0.git"
+$RepoUrl = "https://github.com/sam9neREYES/vd0.git"
 
 function Say($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 
